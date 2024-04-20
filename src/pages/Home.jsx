@@ -4,8 +4,8 @@ import CallToAction from "../components/CallToAction";
 export default function Home() {
   return (
     <div className="pt-20 min-h-screen flex flex-col bg-amber-100">
-      <div className="h-screen">
-        <Carousel leftControl="false" rightControl="false" indicators={false}>
+      <div className="h-96 md:h-screen">
+        <Carousel indicators={false}>
           <img src="/carouselOne.jpg" alt="..." className="h-full" />
           <img src="/carouselTwo.jpg" alt="..." className="h-full" />
           <img src="/carouselThree.jpg" alt="..." className="h-full" />
@@ -14,7 +14,7 @@ export default function Home() {
         </Carousel>
       </div>
       <div className="w-full self-center my-10 flex flex-col md:flex-row justify-around">
-        <div className="">
+        <div className="p-4 md:p-0">
           <Card
             className="max-w-md bg-amber-50 shadow-lg text-center"
             imgAlt="Meaningful alt text for an image that is not purely decorative"
@@ -29,7 +29,7 @@ export default function Home() {
             </p>
           </Card>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 p-4 md:p-0">
           <Card className=" rounded-s-3xl bg-amber-50">
             <h1 className="text-semibold text-2xl">Book Now!</h1>
             <p>From</p>

@@ -14,7 +14,7 @@ export function MyFooter() {
     <Footer container className="bg-amber-200">
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 mb-8 md:mb-0">
             <Footer.Brand
               href="/"
               src="/logo.png"
